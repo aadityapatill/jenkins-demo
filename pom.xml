@@ -88,18 +88,16 @@
         </plugins>
     </pluginManagement>
 </build>
-    <repositories>
-    <repository>
-        <id>snapshot</id>
-        <url>http://localhost:8081/repository/qapitol</url>
-        <snapshots>
-            <enabled>true</enabled>
-            <updatePolicy>always</updatePolicy>
-        </snapshots>
-    </repository>
-    <repository>
-        <id>release</id>
-        <url>http://localhost:8081/repository/qapitol</url>
-    </repository>
-</repositories>
+    <distributionManagement>
+        <repository>
+            <id>snapshot</id>
+            <name>Internal Releases</name>
+            <url>http://localhost:8081/repository/qapitol/</url>
+        </repository>
+        <snapshotRepository>
+            <id>release</id>
+            <name>Internal Releases</name>
+            <url>http://localhost:8081/repository/qapitol/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
