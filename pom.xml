@@ -92,12 +92,12 @@
         <repository>
             <id>snapshot</id>
             <name>Internal Releases</name>
-            <url>http://localhost:8081/repository/qapitol/</url>
+            <url>http://localhost:8081/repository/maven-qapitol/</url>
         </repository>
         <snapshotRepository>
             <id>release</id>
             <name>Internal Releases</name>
-            <url>http://localhost:8081/repository/qapitol/</url>
+            <url>http://localhost:8081/repository/maven-qapitol/</url>
         </snapshotRepository>
     </distributionManagement>
 </project>
